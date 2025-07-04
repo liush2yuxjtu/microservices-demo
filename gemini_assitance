@@ -1,0 +1,21 @@
+获取拉取请求摘要和反馈
+如需让 Gemini Code Assist 对拉取请求进行初步审核，请创建一个新的拉取请求。
+
+当您打开新的拉取请求时，Gemini Code Assist 会提供初步审核。审核完成后，gemini-code-assist[bot] 会自动添加为拉取请求的审核者。Gemini Code Assist 会在拉取请求的对话标签页中添加问题注释及其反馈，然后继续添加有关代码修改部分的注释。
+
+审核意见包含以下信息：
+
+问题的严重程度，分为“严重”“高”“中”和“低”
+对问题的反馈
+可直接从 GitHub 提交的代码建议
+对用户提供的样式指南的引用
+手动调用 Gemini Code Assist
+Gemini Code Assist 会监听任何拉取请求贡献者的评论，并决定是否应做出回复。
+
+如需手动调用 Gemini 代码辅助功能，您可以在拉取请求的主要评论页面中使用以下命令作为问题评论。
+
+命令	说明
+/gemini summary	发布拉取请求中更改的摘要
+/gemini review	发布对拉取请求中更改的代码审核
+/gemini	在注释中手动调用 Gemini Code Assist
+/gemini help	可用命令概览
